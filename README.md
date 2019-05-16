@@ -1,3 +1,0 @@
-# Teasync
-
-Personal site
