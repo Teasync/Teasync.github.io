@@ -64,7 +64,7 @@ body, html {
 
 .hero-image {
     background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url("../img/hero.jpg");
-    min-height: 80vh;
+    min-height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,22 +72,51 @@ body, html {
     overflow: hidden;
 }
 
-.hero-image-overlay {
-    background: url("../img/mist.png") repeat-x center;
-    min-height: 80vh;
-    width: 5076px;
-    animation: slide 240s linear infinite;
+.fog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    transform: translate(0, 20%);
+
 }
 
-@keyframes slide {
-    0% {
+.fog::before, .fog::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.fog::before {
+    background-image: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png');
+    animation: drift 1000s linear 0s infinite;
+}
+
+.fog::after {
+    background-image: url('../img/clouds4.png');
+    animation: drift 2000s linear 0s infinite;
+}
+
+@keyframes drift {
+    from {
         transform: translate3d(0, 0, 0);
     }
-
-    100% {
-        transform: translate3d(-1692px, 0, 0);
+    to {
+        transform: translate3d(-900vw, 0, 0);
     }
 }
+
 
 .hero-title {
     text-align: center;
@@ -115,5 +144,5 @@ body, html {
     font-weight: 300;
     font-size: 20pt;
     color: #44586d;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
 }
