@@ -1,0 +1,140 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 50%), url("../img/hero.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cloud {
+    position: absolute;
+    bottom: -30vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.cloud::before, .cloud::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.cloud::before {
+    background-image: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png');
+    animation: drift 7000s linear 0s infinite;
+}
+
+.cloud::after {
+    background-image: url('../img/clouds4.png');
+    animation: drift 1400s linear 0s infinite;
+}
+
+@keyframes drift {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-900vw, 0, 0);
+    }
+}
+
+.hero-title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 8vh;
+    color: #005288;
+}
+
+.navbar {
+    background-color: rgba(11, 47, 77, 0.6) !important;
+    overflow: hidden;
+    width: 100vw;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.nav-it {
+    color: white !important;
+    font-weight: 300 !important;
+    height: 100% !important;
+
+}
+
+.nav-it:hover {
+    background-color: white !important;
+    color: #005288 !important;
+    text-decoration: none;
+}
