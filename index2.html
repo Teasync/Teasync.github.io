@@ -14,6 +14,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script type="text/javascript" src="js/main.js"></script>
     <meta charset="UTF-8">
     <title>Tong Su</title>
@@ -30,12 +31,34 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light fixed-bottom d-flex justify-content-center flex-row bd-highlight">
-        <div><a href="#" class="nav-it py-4 h3 px-4"> Skills </a></div>
+        <div><a href="#" class="nav-it py-4 h3 px-4" data-toggle="modal" data-target="#exampleModal"> Skills </a></div>
         <div><a href="#" class="nav-it py-4 h3 px-4"> Projects </a></div>
         <div><a href="#" class="nav-it py-4 h3 px-4"> Work </a></div>
         <div><a href="#" class="nav-it py-4 h3 px-4"> About </a></div>
     </nav>
 
+
+
+</div>
+<!-- Modal -->
+<div class="modal animated fadeInUp" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
