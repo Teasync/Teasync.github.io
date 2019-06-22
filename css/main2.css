@@ -1,11 +1,14 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
+    /*-webkit-animation: fadein 1s; !* Safari, Chrome and Opera > 12.1 *!*/
+    /*-moz-animation: fadein 1s; !* Firefox < 16 *!*/
+    /*-ms-animation: fadein 1s; !* Internet Explorer *!*/
+    /*-o-animation: fadein 1s; !* Opera < 12.1 *!*/
+    /*animation: fadein 1s;*/
+}
 
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+div.hidden {
+    display: none
 }
 
 .hero-image {
@@ -115,11 +118,11 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 8vh;
-    color: #005288;
+    color: #006da8;
 }
 
 .navbar {
-    background-color: rgba(11, 47, 77, 0.6) !important;
+    background-color: rgba(0, 66, 110, 0.6) !important;
     overflow: hidden;
     width: 100vw;
     backdrop-filter: blur(4px);
@@ -139,36 +142,59 @@ body {
     text-decoration: none;
 }
 
-.fade-scale {
-    /*transform: scale(0);*/
-    opacity: 0;
-    -webkit-transition: all .25s linear;
-    -o-transition: all .25s linear;
-    transition: all .25s linear;
-}
-
-.fade.show {
-    opacity: 1;
-    /*transform: scale(1);*/
-}
-
-.modal-open .container-fluid, .modal-open  .container {
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    background-color: rgba(0,0,0,0) !important;
-
-}
-
-/*.modal-backdrop {*/
-/*    !*-webkit-animation: fadein 1s; !* Safari, Chrome and Opera > 12.1 *!*!*/
-/*    !*-moz-animation: fadein 1s; !* Firefox < 16 *!*!*/
-/*    !*-ms-animation: fadein 1s; !* Internet Explorer *!*!*/
-/*    !*-o-animation: fadein 1s; !* Opera < 12.1 *!*!*/
-/*    !*animation: fadein 1s;*!*/
-/*    background-color: rgba(0,0,0,0) !important;*/
+/*.fade-scale {*/
+/*    !*transform: scale(0);*!*/
+/*    opacity: 0;*/
+/*    -webkit-transition: all .25s linear;*/
+/*    -o-transition: all .25s linear;*/
+/*    transition: all .25s linear;*/
 /*}*/
+
+/*.fade.show {*/
+/*    opacity: 1;*/
+/*    !*transform: scale(1);*!*/
+/*}*/
+
+.modal-open .container-fluid, .modal-open .container {
+    -webkit-animation: blurIn 0.5s !important; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: blurIn 0.5s !important; /* Firefox < 16 */
+    -ms-animation: blurIn 0.5s !important; /* Internet Explorer */
+    -o-animation: blurIn 0.5s !important; /* Opera < 12.1 */
+    animation: blurIn 0.5s !important;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0) !important;
+
+}
+
+.modal-open {
+    background-color: #6e6e6e !important;
+}
+
+.modal-backdrop {
+    opacity: 0 !important;
+}
+
+@keyframes blurIn {
+    from {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(15px);
+        -webkit-filter: blur(15px);
+    }
+}
+
+@-webkit-keyframes blurIn {
+    from {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+
+    to {
+        filter: blur(15px);
+        -webkit-filter: blur(15px);
+    }
+}
