@@ -1,13 +1,12 @@
-body {
-    font-family: 'Open Sans', sans-serif !important;
-    /*-webkit-animation: fadein 1s; !* Safari, Chrome and Opera > 12.1 *!*/
-    /*-moz-animation: fadein 1s; !* Firefox < 16 *!*/
-    /*-ms-animation: fadein 1s; !* Internet Explorer *!*/
-    /*-o-animation: fadein 1s; !* Opera < 12.1 *!*/
-    /*animation: fadein 1s;*/
+* {
+    border-radius: 0 !important;
 }
 
-div.hidden {
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.hidden {
     display: none
 }
 
@@ -142,19 +141,6 @@ div.hidden {
     text-decoration: none;
 }
 
-/*.fade-scale {*/
-/*    !*transform: scale(0);*!*/
-/*    opacity: 0;*/
-/*    -webkit-transition: all .25s linear;*/
-/*    -o-transition: all .25s linear;*/
-/*    transition: all .25s linear;*/
-/*}*/
-
-/*.fade.show {*/
-/*    opacity: 1;*/
-/*    !*transform: scale(1);*!*/
-/*}*/
-
 .modal-open .container-fluid, .modal-open .container {
     -webkit-animation: blurIn 0.5s !important; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: blurIn 0.5s !important; /* Firefox < 16 */
@@ -169,6 +155,12 @@ div.hidden {
 
 .modal-open {
     background-color: #6e6e6e !important;
+}
+
+.modal.show {
+    transform: translateY(25vh);
+    animation: fadeIn 0.4s;
+    -webkit-animation: fadeIn 0.4s;
 }
 
 .modal-backdrop {
@@ -196,5 +188,29 @@ div.hidden {
     to {
         filter: blur(15px);
         -webkit-filter: blur(15px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(23vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(25vh);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translateY(23vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(25vh);
+        opacity: 1;
     }
 }
