@@ -1,55 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
     <meta charset="UTF-8">
     <title>Tong Su</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 </head>
-<body>
-<div class="hero-image">
+<body class="hidden">
+<div class="container-fluid hero-image">
     <div class="cloud-container">
         <div class="cloud"></div>
     </div>
-    <div class="hero-title">
-        TONG SU
-    </div>
-    <div class="hero-body-box">
-        <div class="hero-body-text">
-            Computer Engineering 2B<br>
-            University of Waterloo<br>
-            Class of 2022
+    <div class="row my-5">&nbsp</div>
+    <div class="row">
+        <div class="col hero-title h5">
+            TONG SU
         </div>
     </div>
+    <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light fixed-bottom d-flex justify-content-center flex-row bd-highlight">
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#skills" id="navSkills">
+            Skills </a></div>
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#projects" id="navProjects">
+            Projects </a></div>
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#work" id="navWork"> Work </a>
+        </div>
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#about" id="navAbout"> About </a>
+        </div>
+    </nav>
+
 
 </div>
-<div class="centred">
-    <ul class="nav">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about>">About</a></li>
-    </ul>
+<!-- Modal -->
+<div class="modal" id="skills" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="skillsLabel">Skills</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ftyjh
+            </div>
+            <div class="modal-footer p-0">
+                <div class="container-fluid p-0 m-0">
+                    <div class="row m-0">
+                        <div class="col p-0 inter-button"></div>
+                        <div class="col-3 p-0">
+                            <button type="button" class="btn btn-secondary btn-block toProjects p-2"
+                                    data-dismiss="modal">
+                                Projects
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<a name="skills"><h1>Skills</h1></a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<a name="projects"><h1>Projects</h1></a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<a name="work"><h1>Work</h1></a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<a name="about"><h1>About</h1></a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="modal" id="projects" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectsLabel">Projects</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ftyjh
+            </div>
+            <div class="modal-footer p-0">
+                <div class="container-fluid p-0 m-0">
+                    <div class="row">
+                        <div class="col-3 pr-0">
+                            <button type="button" class="btn btn-secondary btn-block p-2 float-left toSkills"
+                                    data-dismiss="modal">Skills
+                            </button>
+                        </div>
+                        <div class="col p-0 inter-button"></div>
+                        <div class="col-3 pl-0">
+                            <button type="button" class="btn btn-secondary btn-block p-2 toWork" data-dismiss="modal">
+                                Work
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="work" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="workLabel">Work</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ftyjh
+            </div>
+            <div class="modal-footer p-0">
+                <div class="container-fluid p-0 m-0">
+                    <div class="row">
+                        <div class="col-3 pr-0">
+                            <button type="button" class="btn btn-secondary btn-block p-2 toProjects float-left"
+                                    data-dismiss="modal">
+                                Projects
+                            </button>
+                            </button>
+                        </div>
+                        <div class="col p-0 inter-button"></div>
+                        <div class="col-3 pl-0">
+                            <button type="button" class="btn btn-secondary btn-block toAbout p-2" data-dismiss="modal">
+                                About
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="about" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutLabel">About</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ftyjh
+            </div>
+            <div class="modal-footer p-0">
+                <div class="container-fluid p-0 m-0">
+                    <div class="row m-0">
+                        <div class="col-3 p-0">
+                            <button type="button" class="btn btn-secondary btn-block toWork p-2 float-left"
+                                    data-dismiss="modal">Work
+                            </button>
+                        </div>
+                        <div class="col-9 p-0 inter-button"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
