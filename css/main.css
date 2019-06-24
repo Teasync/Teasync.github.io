@@ -95,7 +95,7 @@ body {
 }
 
 .cloud::before {
-    background-image: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png');
+    background-image: url('../img/fog1.png');
     animation: drift 7000s linear 0s infinite;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(0, 66, 110, 0.6) !important;
+    background-color: rgba(0, 59, 98, 0.6) !important;
     overflow: hidden;
     width: 100vw;
     height: 7vh;
@@ -168,6 +168,10 @@ body {
 
 }
 
+.row {
+    margin: 0;
+}
+
 .modal-backdrop {
     opacity: 0 !important;
 }
@@ -177,9 +181,16 @@ body {
     border: none;
 }
 
-.modal-header, .inter-button {
+.modal-header {
+    margin: 0;
+    padding: 0;
     border: none;
-    background-color: rgba(0, 111, 180, 0.38) !important;
+    background-color: #ffffff !important;
+}
+
+.inter-button {
+    border: none;
+    background-color: hsla(204, 73%, 35%, 0.50) !important;
 }
 
 .modal-footer {
@@ -187,28 +198,47 @@ body {
     background: none;
 }
 
-.modal-title, .close {
-    color: #ffffff;
+.modal-title {
+    color: #18669a;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    margin: 0;
+    padding: 0;
 }
 
 .close {
+    color: #18669a;
     text-shadow: none;
     opacity: 0.9;
 }
 
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-left: none;
+    border-right: none;
+    border-bottom: rgba(110, 110, 110, 0.46);
+}
+
 .modal-body {
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(255, 255, 255, 0.65);
 }
 
 .btn-secondary {
     border: none;
     color: hsl(204, 39%, 40%);
-    background-color: hsla(204, 100%, 88%, 0.34);
+    background-color: hsla(204, 100%, 88%, 0.44);
 }
 
 .btn-secondary:hover {
     color: hsl(204, 39%, 40%);
     background-color: hsla(204, 100%, 88%, 0.5);
+}
+
+.fill-v {
+    height: 100%;
 }
 
 @keyframes blurIn {
@@ -317,4 +347,13 @@ body {
 .fadeOut {
     -webkit-animation: fadeOut 0.4s;
     animation: fadeOut 0.4s;
+}
+
+.hero-info-box {
+    color: white;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.2em;
+    line-height: 180%;
 }
