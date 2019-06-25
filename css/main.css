@@ -116,7 +116,7 @@ body {
 .hero-title {
     text-align: center;
     font-weight: 300;
-    font-size: 8vh;
+    font-size: 500%;
     color: #006da8;
 }
 
@@ -124,13 +124,14 @@ body {
     background-color: rgba(0, 59, 98, 0.6) !important;
     overflow: hidden;
     width: 100vw;
-    height: 7vh;
+
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
 
 .nav-it {
     color: white !important;
+
     font-weight: 300 !important;
     height: 100% !important;
 
@@ -371,10 +372,9 @@ body {
 
 .hero-info-box {
     color: white;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(118, 147, 170, 0.18);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    font-size: 1.5vh !important;
     line-height: 180%;
     font-weight: 400;
 }
