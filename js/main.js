@@ -1,12 +1,6 @@
 $(document).ready(function() {
     $('body').fadeIn(1000).removeClass('hidden');
 
-    // $('#skills').on('hide.bs.modal', function(e) {
-    //     $('body').attr('class', 'blurOut')
-    //     $('#skills').attr('class', 'modal blurOut')
-    //     console.log("asdf")
-    // })
-
     $('.modal').on('hide.bs.modal', function(e) {
         $('body').attr('class', 'blurOut');
         $(this).attr('class', 'modal shown fadeOut');
@@ -40,20 +34,5 @@ $(document).ready(function() {
         }, 200)
     })
 
-    // $('.modal').on('hidden.bs.modal', function(e) {
-    //     $('body').attr('class', '')
-    //     $(this).attr('class', 'modal')
-    // })
 
-    // $('#projects').on('hide.bs.modal', function(e) {
-    //     $('#projects .modal-dialog').attr('class', 'modal-dialog blurOut')
-    // })
-    //
-    // $('#work').on('hide.bs.modal', function(e) {
-    //     $('#work .modal-dialog').attr('class', 'modal-dialog blurOut')
-    // })
-    //
-    // $('#about').on('hide.bs.modal', function(e) {
-    //     $('#about .modal-dialog').attr('class', 'modal-dialog blurOut')
-    // })
 });

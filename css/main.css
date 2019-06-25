@@ -158,13 +158,13 @@ body {
 }
 
 .modal.show {
-    transform: translateY(25vh);
+    transform: translateY(14vh);
     animation: fadeIn 0.4s;
     -webkit-animation: fadeIn 0.4s;
 }
 
 .model.shown {
-    transform: translateY(25vh);
+    transform: translateY(14vh);
 
 }
 
@@ -176,12 +176,12 @@ body {
     opacity: 0 !important;
 }
 
-.modal-content {
+.modal-content, .card {
     background: none;
     border: none;
 }
 
-.modal-header {
+.modal-header, .card-header {
     margin: 0;
     padding: 0;
     border: none;
@@ -193,15 +193,23 @@ body {
     background-color: hsla(204, 73%, 35%, 0.50) !important;
 }
 
-.modal-footer {
+.modal-footer, .card-footer {
     border: none;
     background: none;
 }
 
-.modal-title {
+.modal-title, .card-title {
     color: #18669a;
+}
+
+.modal-title {
     font-size: 2em;
     font-weight: 300;
+}
+
+.card-title {
+    font-size: 1.25em;
+    font-weight: 400;
 }
 
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -209,10 +217,22 @@ body {
     padding: 0;
 }
 
-.close {
+.closeModal {
+    font-weight: 300;
     color: #18669a;
     text-shadow: none;
     opacity: 0.9;
+}
+
+.closeModal:hover {
+    color: #2297e2;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.closeModal:active {
+    text-decoration: none;
+    transform: scale(0.7)
 }
 
 .list-group-item {
@@ -222,8 +242,8 @@ body {
     border-bottom: rgba(110, 110, 110, 0.46);
 }
 
-.modal-body {
-    background-color: rgba(255, 255, 255, 0.65);
+.modal-body, .card-body {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-secondary {
@@ -298,24 +318,24 @@ body {
 
 @keyframes fadeIn {
     from {
-        transform: translateY(23vh);
+        transform: translateY(12vh);
         opacity: 0;
     }
 
     to {
-        transform: translateY(25vh);
+        transform: translateY(14vh);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
     from {
-        transform: translateY(23vh);
+        transform: translateY(12vh);
         opacity: 0;
     }
 
     to {
-        transform: translateY(25vh);
+        transform: translateY(14vh);
         opacity: 1;
     }
 }
@@ -354,6 +374,7 @@ body {
     background-color: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    font-size: 1.4vh;
+    font-size: 1.5vh !important;
     line-height: 180%;
+    font-weight: 400;
 }
