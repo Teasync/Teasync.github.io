@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="shortcut icon" href="img/favicon.png"/>
-    <script src="https://kit.fontawesome.com/41c0addb10.js"></script>
     <meta charset="UTF-8">
     <title>Tong Su</title>
 </head>
@@ -46,29 +45,34 @@
         <div class="col"></div>
     </div>
     <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light fixed-bottom d-flex justify-content-center flex-row bd-highlight">
-        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#skills" id="navSkills">
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#skills" data-backdrop="static"
+                id="navSkills">
             Skills </a></div>
-        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#projects" id="navProjects">
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#projects" data-backdrop="static"
+                id="navProjects">
             Projects </a></div>
-        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#work" id="navWork"> Work </a>
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#work" data-backdrop="static"
+                id="navWork"> Work </a>
         </div>
-        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#about" id="navAbout"> About </a>
+        <div><a href="#" class="nav-it py-5 h3 px-4" data-toggle="modal" data-target="#about" data-backdrop="static"
+                id="navAbout"> About </a>
         </div>
     </nav>
 
 
 </div>
 <!-- Modal -->
-<div class="modal" id="skills" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsModal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
+        <div class="container" style="height:15vh"></div>
         <div class="modal-content">
             <div class="modal-header">
                 <div class="container p-0 m-0">
                     <div class="row">
                         <div class="col">
                             <h5 class="modal-title mx-3 my-1" id="skillsLabel">Skills
-                                <a href="#" class="float-right closeModal" data-dismiss="modal" aria-label="Close">
+                                <a href="#" class="float-right px-3 closeModal" style="display:inline-block;"
+                                   data-dismiss-custom="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </a></h5>
                         </div>
@@ -292,34 +296,233 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="height:15vh"></div>
     </div>
 </div>
 
-<div class="modal" id="projects" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="projects" tabindex="-1" role="dialog" aria-labelledby="projectsModal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
+        <div class="container" style="height:15vh"></div>
         <div class="modal-content">
             <div class="modal-header">
                 <div class="container p-0 m-0">
                     <div class="row">
                         <div class="col">
-                            <h5 class="modal-title m-2 text-center" id="projectsLabel">Projects</h5>
+                            <h5 class="modal-title mx-3 my-1" id="projectsLabel">Projects
+                                <a href="#" class="float-right px-3 closeModal" style="display:inline-block;"
+                                   data-dismiss-custom="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a></h5>
                         </div>
-                        <div class="col-1 p-0">
-                            <button type="button" class="btn-secondary btn-block fill-v" data-dismiss="modal"
-                                    aria-label="Close">
-                                <span aria-hidden="true"><h3 class="m-0">&times;</h3></span>
-                            </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body p-2">
+                <div class="card">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Languages</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="golang" height="50px" src="img/golang.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="python" height="50px" src="img/python.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="java" height="50px" src="img/java.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="cpp" height="50px" src="img/cpp.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="js" height="50px" src="img/js.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Golang
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Python
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Java
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    C++
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    JavaScript
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="batch" height="50px" src="img/batch.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="powershell" height="50px" src="img/powershell.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="oracledb" height="50px" src="img/oracledb.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mysql" height="50px" src="img/mysql.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="postgres" height="50px" src="img/postgres.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Windows Batch
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PowerShell
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Oracle DB
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    MySQL
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Frameworks</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="spring" height="50px" src="img/spring.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="django" height="50px" src="img/django.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="keras" height="50px" src="img/keras.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="tf" height="50px" src="img/tf.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="robot" height="50px" src="img/robot.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="jquery" height="50px" src="img/jquery.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Spring
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Django
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Keras
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    TensorFlow
+                                </div>
+                                <div class="col px-2 pt-2 pb-1 m-0 text-center">
+                                    Robot Framework
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    jQuery
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Technologies</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="git" height="50px" src="img/git.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mercurial" height="50px" src="img/mercurial.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="svn" height="50px" src="img/svn.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="html5" height="50px" src="img/html5.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="css3" height="50px" src="img/css3.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Git
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Mercurial
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    SVN
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    HTML5
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    CSS3
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="bootstrap" height="50px" src="img/bootstrap.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="selenium" height="50px" src="img/selenium.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="macos" height="50px" src="img/macos.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="ubuntu" height="50px" src="img/ubuntu.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Bootstrap
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Selenium
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    macOS
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Ubuntu
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-body">
-                ftyjh
-            </div>
             <div class="modal-footer p-0">
                 <div class="container-fluid p-0 m-0">
-                    <div class="row">
+                    <div class="row m-0">
                         <div class="col-3 pr-0">
                             <button type="button" class="btn btn-secondary btn-block p-2 float-left toSkills"
                                     data-dismiss="modal">Skills
@@ -335,34 +538,233 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="height:15vh"></div>
     </div>
 </div>
 
-<div class="modal" id="work" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="work" tabindex="-1" role="dialog" aria-labelledby="workModal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
+        <div class="container" style="height:15vh"></div>
         <div class="modal-content">
             <div class="modal-header">
                 <div class="container p-0 m-0">
                     <div class="row">
                         <div class="col">
-                            <h5 class="modal-title m-2 text-center" id="workLabel">Work</h5>
+                            <h5 class="modal-title mx-3 my-1" id="workLabel">Work
+                                <a href="#" class="float-right px-3 closeModal" style="display:inline-block;"
+                                   data-dismiss-custom="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a></h5>
                         </div>
-                        <div class="col-1 p-0">
-                            <button type="button" class="btn-secondary btn-block fill-v" data-dismiss="modal"
-                                    aria-label="Close">
-                                <span aria-hidden="true"><h3 class="m-0">&times;</h3></span>
-                            </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body p-2">
+                <div class="card">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Languages</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="golang" height="50px" src="img/golang.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="python" height="50px" src="img/python.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="java" height="50px" src="img/java.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="cpp" height="50px" src="img/cpp.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="js" height="50px" src="img/js.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Golang
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Python
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Java
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    C++
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    JavaScript
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="batch" height="50px" src="img/batch.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="powershell" height="50px" src="img/powershell.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="oracledb" height="50px" src="img/oracledb.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mysql" height="50px" src="img/mysql.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="postgres" height="50px" src="img/postgres.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Windows Batch
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PowerShell
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Oracle DB
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    MySQL
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Frameworks</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="spring" height="50px" src="img/spring.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="django" height="50px" src="img/django.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="keras" height="50px" src="img/keras.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="tf" height="50px" src="img/tf.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="robot" height="50px" src="img/robot.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="jquery" height="50px" src="img/jquery.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Spring
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Django
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Keras
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    TensorFlow
+                                </div>
+                                <div class="col px-2 pt-2 pb-1 m-0 text-center">
+                                    Robot Framework
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    jQuery
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Technologies</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="git" height="50px" src="img/git.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mercurial" height="50px" src="img/mercurial.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="svn" height="50px" src="img/svn.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="html5" height="50px" src="img/html5.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="css3" height="50px" src="img/css3.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Git
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Mercurial
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    SVN
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    HTML5
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    CSS3
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="bootstrap" height="50px" src="img/bootstrap.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="selenium" height="50px" src="img/selenium.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="macos" height="50px" src="img/macos.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="ubuntu" height="50px" src="img/ubuntu.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Bootstrap
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Selenium
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    macOS
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Ubuntu
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-body">
-                ftyjh
-            </div>
             <div class="modal-footer p-0">
                 <div class="container-fluid p-0 m-0">
-                    <div class="row">
+                    <div class="row m-0">
                         <div class="col-3 pr-0">
                             <button type="button" class="btn btn-secondary btn-block p-2 toProjects float-left"
                                     data-dismiss="modal">
@@ -380,30 +782,229 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="height:15vh"></div>
     </div>
 </div>
 
-<div class="modal" id="about" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
+        <div class="container" style="height:15vh"></div>
         <div class="modal-content">
             <div class="modal-header">
                 <div class="container p-0 m-0">
                     <div class="row">
                         <div class="col">
-                            <h5 class="modal-title m-2 text-center" id="aboutLabel">About</h5>
+                            <h5 class="modal-title mx-3 my-1" id="aboutLabel">About
+                                <a href="#" class="float-right px-3 closeModal" style="display:inline-block;"
+                                   data-dismiss-custom="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </a></h5>
                         </div>
-                        <div class="col-1 p-0">
-                            <button type="button" class="btn-secondary btn-block fill-v" data-dismiss="modal"
-                                    aria-label="Close">
-                                <span aria-hidden="true"><h3 class="m-0">&times;</h3></span>
-                            </button>
-                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="modal-body">
-                ftyjh
+            <div class="modal-body p-2">
+                <div class="card">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Languages</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="golang" height="50px" src="img/golang.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="python" height="50px" src="img/python.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="java" height="50px" src="img/java.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="cpp" height="50px" src="img/cpp.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="js" height="50px" src="img/js.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Golang
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Python
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Java
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    C++
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    JavaScript
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="batch" height="50px" src="img/batch.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="powershell" height="50px" src="img/powershell.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="oracledb" height="50px" src="img/oracledb.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mysql" height="50px" src="img/mysql.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="postgres" height="50px" src="img/postgres.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Windows Batch
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PowerShell
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Oracle DB
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    MySQL
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Frameworks</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="spring" height="50px" src="img/spring.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="django" height="50px" src="img/django.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="keras" height="50px" src="img/keras.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="tf" height="50px" src="img/tf.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="robot" height="50px" src="img/robot.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="jquery" height="50px" src="img/jquery.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Spring
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Django
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Keras
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    TensorFlow
+                                </div>
+                                <div class="col px-2 pt-2 pb-1 m-0 text-center">
+                                    Robot Framework
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    jQuery
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header card-title text-center">
+                        <div class="mx-3 my-1 ">Technologies</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container p-0 m-0">
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="git" height="50px" src="img/git.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="mercurial" height="50px" src="img/mercurial.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="svn" height="50px" src="img/svn.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="html5" height="50px" src="img/html5.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="css3" height="50px" src="img/css3.png"/>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Git
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Mercurial
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    SVN
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    HTML5
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    CSS3
+                                </div>
+
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="bootstrap" height="50px" src="img/bootstrap.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="selenium" height="50px" src="img/selenium.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="macos" height="50px" src="img/macos.png"/>
+                                </div>
+                                <div class="col pt-3 m-0 text-center">
+                                    <img alt="ubuntu" height="50px" src="img/ubuntu.png"/>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0">
+                                <div class="col p-2 m-0 text-center">
+                                    Bootstrap
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Selenium
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    macOS
+                                </div>
+                                <div class="col p-2 m-0 text-center">
+                                    Ubuntu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer p-0">
                 <div class="container-fluid p-0 m-0">
@@ -416,9 +1017,9 @@
                         <div class="col-9 p-0 inter-button"></div>
                     </div>
                 </div>
-
             </div>
         </div>
+        <div class="container" style="height:15vh"></div>
     </div>
 </div>
 
