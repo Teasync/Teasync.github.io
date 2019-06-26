@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif !important;
-    background-color: #6e6e6e;
+    background-color: #ffffff;
     z-index: -5;
 }
 
@@ -151,17 +151,24 @@ body {
 
 .container-fluid.hero-image, .container.hero-image {
     filter: none;
-    transition: var(--transition-time) filter linear;
+    transition: var(--transition-time) filter linear, var(--transition-time) transform linear;
+    transform: none;
 
     -webkit-filter: none;
-    -webkit-transition: var(--transition-time) -webkit-filter linear;
+    -webkit-transition: var(--transition-time) -webkit-filter linear, var(--transition-time) -webkit-transform linear;
+    -webkit-transform: none;
+    overflow: hidden;
 }
 
 .modal-open .container-fluid.hero-image, .modal-open .container.hero-image {
     filter: blur(15px);
+    transform: scale(.99);
+
     -webkit-filter: blur(15px);
+    -webkit-transform: scale(.99);
 
     background-color: rgba(0, 0, 0, 0) !important;
+    overflow: hidden;
 }
 
 .modal-backdrop {
